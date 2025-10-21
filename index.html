@@ -28,7 +28,75 @@
             <h3>Grup 1 - Desain Poster</h3>
             <div class="isi-tugas" id="grup1">
                 <p>Desain poster dengan tema lingkungan.</p>
-                <img src="poster2.jpg" alt="Poster Lingkungan" class="foto-tugas">
+               <!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Pribadi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Selamat Datang di Web Saya</h1>
+        <p>Penjelasan Tentang Jurusan DKV:</p>
+        <p class="desc">Desain Komunikasi Visual (DKV) adalah jurusan yang mempelajari konsep komunikasi dan ungkapan kreatif melalui berbagai media visual seperti ilustrasi, tipografi, fotografi, animasi, dan desain grafis untuk menyampaikan pesan kepada audiens.</p>
+    </header>
+
+    <section class="info-diri">
+        <h2>Informasi Diri</h2>
+        <ul>
+            <li>Nama: John Doe</li>
+            <li>Kelas: XII DKV 1</li>
+            <li>Hobi: Menggambar, Editing, Desain Grafis</li>
+        </ul>
+    </section>
+
+    <section class="tugas">
+        <h2>Tugas Sekolah</h2>
+        <div class="grup" onclick="toggleTugas('grup1')">
+            <h3>Grup 1 - Desain Poster</h3>
+            <div class="isi-tugas" id="grup1">
+                <p>Desain poster dengan tema lingkungan.</p>
+                <img src="poster2.jpg" alt="Poster Lingkungan" class="foto-tugas" onclick="openLightbox(this.src)">
+            </div>
+        </div>
+        <div class="grup" onclick="toggleTugas('grup2')">
+            <h3>Grup 2 - Animasi 2D</h3>
+            <div class="isi-tugas" id="grup2">
+                <p>Membuat animasi berdurasi 10 detik dengan tema bebas.</p>
+        <img src="images.jpg" alt="Preview Animasi" class="foto-tugas" onclick="openLightbox(this.src)">      
+            </div>
+        </div>
+        <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <img id="lightbox-img" src="" alt="Preview Gambar">
+</div>
+    </section>
+
+    <section class="formulir">
+        <h2>Formulir Lamaran</h2>
+        <form id="lamaranForm">
+            <label for="nama">Nama:</label>
+            <input type="text" id="nama" name="nama" required>
+
+            <label for="telepon">No. Telepon:</label>
+            <input type="tel" id="telepon" name="telepon" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <button type="submit">Kirim</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>Alamat: Jl. Pendidikan No. 123, Kota Kreatif, Indonesia</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
             </div>
         </div>
         <div class="grup" onclick="toggleTugas('grup2')">
