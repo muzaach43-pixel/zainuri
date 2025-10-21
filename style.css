@@ -143,3 +143,25 @@ footer {
     border-top: 1px solid #00ffff;
     box-shadow: 0 0 10px #00ffff;
 }
+/* === Lightbox === */
+.lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+    border: 4px solid #00ffff;
+    box-shadow: 0 0 25px #00ffff;
+    border-radius: 8px;
+}
+
