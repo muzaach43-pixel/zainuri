@@ -1,54 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+       <title>profil digital -[Muhammad Zainuri]</title>
+       <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+       <div class="kartu-profil">
+       <img src="images.jpg" alt="foto profil saya">
+         <header>
+       <h1>muhammad zainuri</h1>
+           <header>
+             <main>
+               <section id="profil">
+       <p>siswa SMK terbilang biasa saja tapi memiliki mimpi yang indah dan ingin membahagiakan semuanya!</p>
+       <a href="https://www.instagram.com/whahahah272?igsh=b3RhYTI4dmtsNHdq">kunjungi instagram saya!</a>
+               </section>          
+       <button id="sapaButton">Sapa Guweee brooo!</button>
+                <button id="sapaButton">pencet bang!</button>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
+
+
+
 <!doctype html>
 <html lang="id">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Discord-ish Web Chat</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portofolio Design — Muhammad Zainuri</title>
+  <link rel="stylesheet" href="styles.css">
+  <meta name="description" content="Portofolio desain — Nama Anda. UI/UX, branding, ilustrasi, dsb.">
 </head>
 <body>
-  <div class="app">
-    <aside class="sidebar">
-      <div class="server-list">
-        <div class="server">D</div>
-        <div class="server">G</div>
-        <div class="server">Z</div>
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="#">Muhammad Zainuri</a>
+      <nav class="nav" id="nav">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button id="navToggle" class="nav-toggle">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <h1>Halo — saya <span class="accent">Muhammad Zainuri</span></h1>
+        <p class="lead">siswa dengan jurusan Desainer visual & komunikasi yang membuat produk yang jelas, elegan, dan mudah digunakan.</p>
+        <a class="btn" href="#projects">Lihat Proyek</a>
       </div>
-      <div class="channels">
-        <h4>Channels</h4>
-        <ul>
-          <li class="channel active"># general</li>
-          <li class="channel"># design</li>
-          <li class="channel"># random</li>
-        </ul>
+    </section>
+
+    <section id="about" class="container about">
+      <h2>Tentang Saya</h2>
+      <p>Saya bekerja pada branding, desain antarmuka, dan ilustrasi. Saya suka menyelesaikan masalah desain dengan solusi sederhana yang estetis dan fungsional.</p>
+      <ul class="skills">
+        <li>Portofolio</li>
+        <li>Desain grafis</li>
+        <li>Illustrasi</li>
+        <li>Poster</li>
+      </ul>
+    </section>
+
+    <section id="projects" class="container projects">
+      <h2>Proyek</h2>
+      <div class="grid" id="projectsGrid">
+        <!-- Contoh item proyek. Duplikat dan ganti konten nyata Anda -->
+        <article class="project-card" data-title="Branding Cafe" data-desc="Branding lengkap: logo, kemasan, dan social assets." data-img="">
+          <div class="thumb">Thumbnail</div>
+          <div class="thumb">Poster</div>
+          <h3>Desain grafis</h3>
+          <p class="meta">Desain • 2025</p>
+          <button class="details-btn">Lihat</button>
+        </article>
+
+        <article class="project-card" data-title="Aplikasi Task" data-desc="UI/UX untuk aplikasi manajemen tugas dengan micro-interactions." data-img="">
+          <div class="thumb">Thumbnail</div>
+          <h3>Poster</h3>
+          <p class="meta">Poster • 2025</p>
+          <button class="details-btn">Lihat</button>
+        </article>
+        <article class="project-card" data-tittle="Branding Cafe" data-desc="Branding lengkap: logo, kemasan, dan social assets." data-img="">
+          <div class="thumb">Thumbnail</div>
+        <h3>portofolio</h3>
+        <p class="meta">Portofolio • 2025</p>
+        <button class="details-btn">Lihat selengkapnya</button>
+        </article>
+
+        <!-- Tambah proyek lain di sini -->
       </div>
-    </aside>
+    </section>
 
-    <main class="main">
-      <header class="header">
-        <div class="room-info">
-          <h3># general</h3>
-          <p class="sub">Private channel • 12 online</p>
-        </div>
-        <div class="user-profile">
-          <span id="usernameLabel">Guest</span>
-          <button id="changeNameBtn">Change</button>
-        </div>
-      </header>
+    <section id="contact" class="container contact">
+      <h2>Kontak</h2>
+      <p>Ingin bekerja sama? Isi formulir atau kirim email ke <a href="muzaach43@gmail.com">muzaach43@gmail.com</a>.</p>
+      <form id="contactForm">
+        <label>
+          Nama
+          <input type="text" name="name" required>
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" required>
+        </label>
+        <label>
+          Pesan
+          <textarea name="message" rows="4" required></textarea>
+        </label>
+        <button type="submit" class="btn">Kirim</button>
+      </form>
+    </section>
+  </main>
 
-      <section class="chat" id="chat">
-        <!-- messages injected here -->
-      </section>
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Muhammad Zainuri — Semua hak cipta.</p>
+    </div>
+  </footer>
 
-      <footer class="composer">
-        <div class="composer-left">
-          <input id="messageInput" type="text" placeholder="Ketik pesan... (Tekan Enter untuk kirim)" autocomplete="off" />
-        </div>
-        <div class="composer-right">
-          <button id="sendBtn">Kirim</button>
-        </div>
-      </footer>
-    </main>
+  <div id="modal" class="modal hidden" role="dialog" aria-hidden="true">
+    <div class="modal-content">
+      <button id="modalClose" class="modal-close">✕</button>
+      <h3 id="modalTitle"></h3>
+      <p id="modalDesc"></p>
+    </div>
   </div>
 
   <script src="script.js"></script>
